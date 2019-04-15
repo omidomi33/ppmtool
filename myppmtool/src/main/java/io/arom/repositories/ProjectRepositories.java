@@ -8,5 +8,7 @@ import io.arom.domain.Project;
 @Repository
 public interface ProjectRepositories extends CrudRepository<Project, Long> {
 	Project findByprojectIdentifier(String projectId);
+	@Override
+	Iterable<Project> findAll();
 
 }
