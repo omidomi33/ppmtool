@@ -29,6 +29,6 @@ export const getProject = (id, history) => async dispatch => {
       payload: res.data
     })
   } catch (err) {
-    
+    history.push("/dashboard")
   }
 }
